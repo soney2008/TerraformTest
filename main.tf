@@ -26,9 +26,9 @@ resource "google_compute_instance" "default" {
  name         = "flask-vm-${random_id.instance_id.hex}"
  machine_type = "f1-micro"
  zone         = "europe-west2-a"
- metadata = {
-   ssh-keys = "soneymanic:${file("C:/Users/358320/.ssh/id_rsa.pub")}"
- }
+# metadata = {
+#   ssh-keys = "soneymanic:${file("C:/Users/358320/.ssh/id_rsa.pub")}"
+# }
 
  boot_disk {
    initialize_params {
